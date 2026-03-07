@@ -33,6 +33,9 @@ The module is designed to be extended by development teams and agencies. By impl
 2. In the Page Builder panel, locate the **"CMS Widget"** component.
 3. Drag the component onto the canvas and drop it in the desired position.
 4. Click the component to open its settings, select the widget type from the dropdown, and fill in its parameters.
+
+   ![CMS Widget sidebar](doc/widget-sidebar_screenshot.png)
+
 5. If a preview has been implemented for the selected widget, it will render directly on the canvas. Otherwise a placeholder is shown.
 6. Save your content as usual.
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: MageOS PageBuilderWidget
-nav_order: 4
+nav_order: 2
 has_children: true
 permalink: /page-builder-widget/
 ---
