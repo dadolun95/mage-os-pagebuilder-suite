@@ -1,9 +1,4 @@
----
-layout: default
-title: Store Manager Guide
-parent: MageOS Widgetkit
-nav_order: 1
----
+
 
 # Widgetkit — Store Manager Guide
 
