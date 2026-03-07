@@ -23,21 +23,73 @@ The module is designed to let development teams build advanced CMS widgets with 
 
 ---
 
-## How to Use
+## How it Works
 
-When a widget built with AdvancedWidget is added to a CMS page or block, its configuration panel may include the following elements:
+### Title Separators
 
-**Title separators** — visual section dividers to group related fields.
+Widgets can include visual section separators to group related fields and make long configuration panels easier to navigate.
 
-**Repeatable sections** — one or more expandable areas where you can add multiple rows of data. Each row can be:
-- filled in directly from the main configuration panel or via a detail modal
-- sorted by dragging the row handle
-- validated on required fields before saving
+![Title section](doc/title-section_screenshot.png)
 
-**Specialized field types** available inside rows:
-- **Image field** — opens the Magento media gallery to pick or upload an image
-- **Product field** — opens a product search to associate a product to the row
-- **Select field** — a dropdown with predefined options
+---
+
+### Repeatable Sections (Multi-row)
+
+The core feature is the ability to define **repeatable sections** — areas where you can add an unlimited number of rows, each containing its own set of fields.
+
+![Repeatable section](doc/repeatable-section_screenshot.png)
+
+#### Tooltips
+
+Each field inside a row can show a tooltip to guide you on what to enter.
+
+![Repeatable section — tooltips](doc/repeatable-section-tooltip_screenshot.png)
+
+#### Validation
+
+Fields marked as required will be validated before saving. The form will highlight any missing values.
+
+![Repeatable section — validation](doc/repeatable-section-validation_screenshot.png)
+
+#### Sorting
+
+Rows can be reordered by dragging the sort handle on the left side of each row.
+
+![Repeatable section — sorting](doc/repeatable-section-sorter_screenshot.png)
+
+#### Inline vs. Modal editing
+
+Some fields are editable directly in the main row. Others require opening a detail modal for editing — the developer decides this per field.
+
+![Repeatable section — row/modal](doc/repeatable-section-row_screenshot.png)
+
+---
+
+### Image Field
+
+Rows can include an image picker that opens the Magento media gallery, letting you select or upload an image.
+
+![Image field](doc/image-field_screenshot.png)
+
+![Image field — selection](doc/image-field-selection_screenshot.png)
+
+---
+
+### Select Field
+
+Rows can include dropdown select fields with predefined options.
+
+![Select field](doc/select-field_screenshot.png)
+
+---
+
+### Product Field
+
+Rows can include a product picker that opens a product search grid.
+
+![Product field](doc/product-field_screenshot.png)
+
+![Product field — selection](doc/product-field-selection_screenshot.png)
 
 ---
 
