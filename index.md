@@ -12,9 +12,9 @@ Welcome to the official documentation for the **MageOS PageBuilder Suite** — a
 
 | Module | Description |
 |--------|-------------|
-| [MageOS Widgetkit](widgetkit/) | A collection of ready-to-use widgets for your Magento 2 store |
-| [MageOS AdvancedWidget](advanced-widget/) | Advanced widget configuration and management capabilities |
 | [MageOS PageBuilderWidget](page-builder-widget/) | Seamless integration between PageBuilder and the Magento widget system |
+| [MageOS AdvancedWidget](advanced-widget/) | Advanced widget configuration and management capabilities |
+| [MageOS Widgetkit](widgetkit/) | A collection of ready-to-use widgets for your Magento 2 store |
 | [MageOS PageBuilder Template Import/Export](page-builder-template-import-export/) | Import and export PageBuilder templates across environments |
 
 ## Getting Started
