@@ -12,9 +12,6 @@ permalink: /page-builder-template-import-export/
 
 ## Overview
 
-*(Module overview coming soon)*
+`MageOS_PageBuilderTemplateImportExport` lets you export PageBuilder templates from one Magento 2 environment and import them into another. It streamlines content migration, multi-site deployments, and staging-to-production workflows without manual recreation.
 
-## Sections
-
-- [Store Manager Guide](store-manager/) — How to use Template Import/Export from the Magento Admin panel.
-- [Developer Guide](developer/) — Technical documentation for developers.
+[View on GitHub](https://github.com/mage-os/mageos-pagebuilder-template-import-export){:target="_blank" rel="noopener noreferrer"}

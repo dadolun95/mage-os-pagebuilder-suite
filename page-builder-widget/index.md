@@ -12,9 +12,6 @@ permalink: /page-builder-widget/
 
 ## Overview
 
-*(Module overview coming soon)*
+`MageOS_PageBuilderWidget` bridges Magento 2's native widget system and PageBuilder. It lets you insert and configure any registered widget directly inside PageBuilder layouts—without writing custom code or leaving the visual editor.
 
-## Sections
-
-- [Store Manager Guide](store-manager/) — How to use PageBuilderWidget from the Magento Admin panel.
-- [Developer Guide](developer/) — Technical documentation for developers.
+[View on GitHub](https://github.com/mage-os/mageos-pagebuilder-widget){:target="_blank" rel="noopener noreferrer"}

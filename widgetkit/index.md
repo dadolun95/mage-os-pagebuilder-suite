@@ -12,9 +12,6 @@ permalink: /widgetkit/
 
 ## Overview
 
-*(Module overview coming soon)*
+`MageOS_Widgetkit` is a ready-to-use library of pre-built, configurable Magento 2 widgets. Drop in common content patterns—product grids, banners, carousels, and more—with minimal setup, fully compatible with PageBuilder and the native widget system.
 
-## Sections
-
-- [Store Manager Guide](store-manager/) — How to use Widgetkit from the Magento Admin panel.
-- [Developer Guide](developer/) — Technical documentation for developers.
+[View on GitHub](https://github.com/mage-os/mageos-widgetkit){:target="_blank" rel="noopener noreferrer"}

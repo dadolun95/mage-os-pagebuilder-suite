@@ -12,9 +12,6 @@ permalink: /advanced-widget/
 
 ## Overview
 
-*(Module overview coming soon)*
+`MageOS_AdvancedWidget` extends Magento's widget framework with richer field types: repeatable sections, image pickers, product selectors, tooltips, and custom validation. It gives developers a powerful toolkit for building complex, fully configurable widgets with minimal boilerplate.
 
-## Sections
-
-- [Store Manager Guide](store-manager/) — How to use AdvancedWidget from the Magento Admin panel.
-- [Developer Guide](developer/) — Technical documentation for developers.
+[View on GitHub](https://github.com/mage-os/mageos-advanced-widget){:target="_blank" rel="noopener noreferrer"}
