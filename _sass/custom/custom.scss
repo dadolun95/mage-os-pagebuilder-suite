@@ -1,0 +1,270 @@
+// ─── Global ───────────────────────────────────────────────────────────────────
+
+body {
+  background-color: #05061e;
+  color: #a3a3a3;
+}
+
+// ─── Typography ───────────────────────────────────────────────────────────────
+
+h1, h2, h3, h4, h5, h6 {
+  color: #e5e5e5;
+}
+
+a {
+  color: #f97316;
+  &:hover {
+    color: lighten(#f97316, 12%);
+    text-decoration: underline;
+  }
+}
+
+// ─── Sidebar / Navigation ─────────────────────────────────────────────────────
+
+.side-bar {
+  background-color: #07092a;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-title {
+  color: #e5e5e5 !important;
+  font-weight: 700;
+}
+
+.site-nav {
+  .nav-list {
+    .nav-list-item {
+      .nav-list-link {
+        color: #a3a3a3;
+
+        &:hover,
+        &.active {
+          color: #f97316;
+          background-color: rgba(249, 115, 22, 0.08);
+        }
+
+        &.active {
+          font-weight: 600;
+        }
+      }
+    }
+
+    // child items
+    .nav-list .nav-list-link {
+      color: #a3a3a3;
+      &:hover,
+      &.active {
+        color: #f97316;
+        background-color: rgba(249, 115, 22, 0.08);
+      }
+    }
+  }
+}
+
+// ─── Main content area ────────────────────────────────────────────────────────
+
+.main-content-wrap {
+  background-color: #05061e;
+}
+
+.main {
+  background-color: #05061e;
+}
+
+// ─── Code blocks ─────────────────────────────────────────────────────────────
+
+code {
+  background-color: #0d0f2e;
+  color: #e5e5e5;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+
+pre.highlight,
+div.highlighter-rouge,
+figure.highlight {
+  background-color: #0d0f2e !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+
+  code {
+    background-color: transparent;
+    border: none;
+    color: #e5e5e5;
+  }
+}
+
+// ─── Tables ───────────────────────────────────────────────────────────────────
+
+table {
+  background-color: #07092a;
+  border-collapse: collapse;
+
+  thead {
+    background-color: #0d0f2e;
+    th {
+      color: #e5e5e5;
+      border-bottom: 1px solid rgba(249, 115, 22, 0.4);
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+      &:nth-child(odd) {
+        background-color: rgba(255, 255, 255, 0.02);
+      }
+
+      &:hover {
+        background-color: rgba(249, 115, 22, 0.05);
+      }
+    }
+
+    td {
+      color: #a3a3a3;
+    }
+  }
+}
+
+// ─── Search ───────────────────────────────────────────────────────────────────
+
+.search {
+  .search-input {
+    background-color: #07092a;
+    color: #e5e5e5;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    &::placeholder {
+      color: #6b6b8a;
+    }
+  }
+}
+
+.search-results {
+  background-color: #07092a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  .search-result {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+    &:hover {
+      background-color: rgba(249, 115, 22, 0.08);
+    }
+
+    .search-result-title {
+      color: #e5e5e5;
+    }
+
+    .search-result-preview {
+      color: #a3a3a3;
+    }
+  }
+}
+
+// ─── Breadcrumbs ──────────────────────────────────────────────────────────────
+
+.breadcrumb-nav-list-item {
+  color: #a3a3a3;
+
+  &::after {
+    color: #4a4a6a;
+  }
+
+  a {
+    color: #f97316;
+  }
+}
+
+// ─── Blockquotes ─────────────────────────────────────────────────────────────
+
+blockquote {
+  color: #a3a3a3;
+  border-left: 4px solid #f97316;
+  background-color: rgba(249, 115, 22, 0.06);
+  padding: 0.5rem 1rem;
+  border-radius: 0 4px 4px 0;
+}
+
+// ─── Horizontal rules ─────────────────────────────────────────────────────────
+
+hr {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+// ─── Footer ───────────────────────────────────────────────────────────────────
+
+.site-footer {
+  background-color: #07092a;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #6b6b8a;
+}
+
+// ─── Aux nav / header ─────────────────────────────────────────────────────────
+
+.aux-nav-list-item a {
+  color: #a3a3a3;
+  &:hover {
+    color: #f97316;
+  }
+}
+
+// ─── Module cards (homepage) ──────────────────────────────────────────────────
+
+.module-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.module-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background-color: #07092a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  text-decoration: none !important;
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+  group: true;
+
+  &:hover {
+    border-color: rgba(249, 115, 22, 0.5);
+    background-color: #0a0c2e;
+    transform: translateY(-2px);
+    text-decoration: none !important;
+  }
+
+  .module-card-icon {
+    flex-shrink: 0;
+  }
+
+  .module-card-body {
+    flex: 1;
+
+    .module-card-title {
+      color: #e5e5e5;
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0 0 0.4rem;
+    }
+
+    .module-card-desc {
+      color: #a3a3a3;
+      font-size: 0.875rem;
+      margin: 0;
+      line-height: 1.5;
+    }
+  }
+}
+
+// ─── Icon helpers ─────────────────────────────────────────────────────────────
+
+.bg-icon {
+  background-color: #f97316;
+}
+
+.text-green-600 {
+  color: #16a34a;
+}
