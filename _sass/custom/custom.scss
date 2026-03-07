@@ -50,6 +50,8 @@ a {
 .site-title {
   color: #e5e5e5 !important;
   font-weight: 700;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .site-nav {
@@ -57,15 +59,18 @@ a {
     .nav-list-item {
       .nav-list-link {
         color: #a3a3a3;
+        display: flex;
+        align-items: center;
 
-        &:hover,
-        &.active {
+        &:hover {
           color: #f97316;
-          background-color: rgba(249, 115, 22, 0.08);
+          background-color: transparent;
         }
 
         &.active {
+          color: #f97316;
           font-weight: 600;
+          background-color: transparent;
         }
       }
     }
@@ -73,12 +78,34 @@ a {
     // child items
     .nav-list .nav-list-link {
       color: #a3a3a3;
-      &:hover,
+
+      &:hover {
+        color: #f97316;
+        background-color: transparent;
+      }
+
       &.active {
         color: #f97316;
-        background-color: rgba(249, 115, 22, 0.08);
+        background-color: transparent;
       }
     }
+  }
+}
+
+// Nav icon
+.nav-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+  color: #f97316;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    fill: none;
+    vertical-align: middle;
   }
 }
 
@@ -136,10 +163,6 @@ table {
       &:nth-child(odd) {
         background-color: rgba(255, 255, 255, 0.02);
       }
-
-      &:hover {
-        background-color: rgba(249, 115, 22, 0.05);
-      }
     }
 
     td {
@@ -168,10 +191,6 @@ table {
 
   .search-result {
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-
-    &:hover {
-      background-color: rgba(249, 115, 22, 0.08);
-    }
 
     .search-result-title {
       color: #e5e5e5;
@@ -243,18 +262,16 @@ hr {
   display: flex;
   align-items: flex-start;
   padding: 1.5rem;
-  background-color: #07092a;
+  background-color: rgba(30, 41, 59, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   text-decoration: none !important;
-  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
-  group: true;
+  transition: background-color 0.2s ease;
 
   &:hover {
-    border-color: rgba(249, 115, 22, 0.5);
-    background-color: #0a0c2e;
-    transform: translateY(-2px);
+    background-color: rgba(30, 41, 59, 0.75);
     text-decoration: none !important;
+    border-color: rgba(255, 255, 255, 0.08);
   }
 
   .module-card-icon {
@@ -280,14 +297,34 @@ hr {
   }
 }
 
-// ─── Icon helpers ─────────────────────────────────────────────────────────────
+// ─── Card icon wrapper ────────────────────────────────────────────────────────
 
-.bg-icon {
+.card-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
   background-color: #f97316;
+  margin-right: 1rem;
+  color: #fff;
+  transition: transform 0.3s ease;
+
+  .module-card:hover & {
+    transform: scale(1.1);
+  }
 }
 
-.text-green-600 {
-  color: #16a34a;
+.card-icon-svg {
+  width: 24px;
+  height: 24px;
+  stroke: #fff;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
 }
 
 // ─── Sidebar header logo ──────────────────────────────────────────────────────
@@ -298,10 +335,21 @@ hr {
   display: block;
 }
 
-.site-title {
-  // give the logo link room to breathe
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.site-title.logo-injected {
+  font-size: 0;
+  line-height: 0;
+}
+
+.site-title .site-logo-inline {
+  display: block;
+  height: 36px;
+  width: auto;
+}
+
+@media (max-width: 480px) {
+  .site-title .site-logo-inline {
+    height: 28px;
+  }
 }
 
 // ─── Footer logo ─────────────────────────────────────────────────────────────
