@@ -1,0 +1,38 @@
+title: MageOS PageBuilder Suite
+description: Documentation for MageOS PageBuilder Suite modules
+baseurl: "/mage-os-pagebuilder-suite"
+url: "https://mage-os.github.io"
+
+remote_theme: just-the-docs/just-the-docs
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+# Just the Docs settings
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+
+nav_sort: order
+
+aux_links:
+  "GitHub":
+    - "https://github.com/mage-os"
+
+footer_content: "MageOS PageBuilder Suite Documentation"
+
+# Callouts
+callouts:
+  note:
+    title: Note
+    color: blue
+  tip:
+    title: Tip
+    color: green
+  important:
+    title: Important
+    color: yellow
+  warning:
+    title: Warning
+    color: red
