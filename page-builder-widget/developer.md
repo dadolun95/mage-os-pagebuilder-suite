@@ -30,8 +30,6 @@ Technical documentation for developers working with **MageOS PageBuilderWidget**
 
 ### Widget Preview assignment
 
-![CMS Widget sidebar](doc/widget-sidebar_screenshot.png)
-
 To add a preview for a widget, create a `widget.xml` file in your module and change the XSD reference from the standard Magento one to the one provided by this module.
 
 Replace:
