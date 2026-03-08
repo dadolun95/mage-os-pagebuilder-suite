@@ -8,10 +8,6 @@ permalink: /advanced-widget/
 
 # MageOS AdvancedWidget
 
-`MageOS_AdvancedWidget` extends Magento 2's native widget system with advanced configuration and management capabilities.
+`MageOS_AdvancedWidget` extends Magento 2's native widget system with advanced configuration and management capabilities. It adds field types to Magento's widget framework: repeatable sections, image pickers, product selectors, tooltips, and custom validation. It gives developers a powerful toolkit for building complex, fully configurable widgets with minimal boilerplate.
 
-## Overview
-
-`MageOS_AdvancedWidget` extends Magento's widget framework with richer field types: repeatable sections, image pickers, product selectors, tooltips, and custom validation. It gives developers a powerful toolkit for building complex, fully configurable widgets with minimal boilerplate.
-
-[View on GitHub](https://github.com/mage-os/mageos-advanced-widget){:target="_blank" rel="noopener noreferrer"}
+[View on GitHub](https://github.com/mage-os-lab/module-advanced-widget){:target="_blank" rel="noopener noreferrer"}
